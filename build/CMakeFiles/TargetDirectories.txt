@@ -1,0 +1,17 @@
+/home/khoa/C_practice/build/CMakeFiles/download_extra_data.dir
+/home/khoa/C_practice/build/CMakeFiles/clean_test_results.dir
+/home/khoa/C_practice/build/ex1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+/home/khoa/C_practice/build/ex1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+/home/khoa/C_practice/build/gtest/CMakeFiles/gtest.dir
+/home/khoa/C_practice/build/ex1/CMakeFiles/std_msgs_generate_messages_cpp.dir
+/home/khoa/C_practice/build/ex1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+/home/khoa/C_practice/build/CMakeFiles/tests.dir
+/home/khoa/C_practice/build/ex1/CMakeFiles/std_msgs_generate_messages_lisp.dir
+/home/khoa/C_practice/build/ex1/CMakeFiles/roscpp_generate_messages_py.dir
+/home/khoa/C_practice/build/CMakeFiles/doxygen.dir
+/home/khoa/C_practice/build/gtest/CMakeFiles/gtest_main.dir
+/home/khoa/C_practice/build/ex1/CMakeFiles/roscpp_generate_messages_cpp.dir
+/home/khoa/C_practice/build/CMakeFiles/run_tests.dir
+/home/khoa/C_practice/build/ex1/CMakeFiles/roscpp_generate_messages_lisp.dir
+/home/khoa/C_practice/build/ex1/CMakeFiles/publish_message.dir
+/home/khoa/C_practice/build/ex1/CMakeFiles/std_msgs_generate_messages_py.dir

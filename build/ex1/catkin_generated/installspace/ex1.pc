@@ -1,0 +1,8 @@
+prefix=/home/khoa/C_practice/install
+
+Name: ex1
+Description: Description of ex1
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/khoa/C_practice/install/lib 
+Requires: 

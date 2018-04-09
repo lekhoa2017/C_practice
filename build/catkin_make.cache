@@ -1,0 +1,2 @@
+ex1
+-DCATKIN_DEVEL_PREFIX=/home/khoa/C_practice/devel -DCMAKE_INSTALL_PREFIX=/home/khoa/C_practice/install -G Unix Makefiles
