@@ -116,7 +116,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+ include
   ${catkin_INCLUDE_DIRS}
 )
 
@@ -201,3 +201,8 @@ include_directories(
 add_executable(publish_message src/publish_message.cpp)
 target_link_libraries(publish_message ${catkin_LIBRARIES})
 add_dependencies(publish_message ex1_generate_messages_cpp)
+
+
+add_executable(test_lib1 src/nodes/test_lib1.cpp src/class_files/lib1.cpp)
+target_link_libraries(test_lib1 ${catkin_LIBRARIES})
+add_dependencies(test_lib1 ex1_generate_messages_cpp)

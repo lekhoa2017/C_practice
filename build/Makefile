@@ -373,6 +373,19 @@ std_msgs_generate_messages_py/fast:
 	$(MAKE) -f ex1/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex1/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+#=============================================================================
+# Target rules for targets named test_lib1
+
+# Build rule for target.
+test_lib1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_lib1
+.PHONY : test_lib1
+
+# fast build rule for target.
+test_lib1/fast:
+	$(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/build
+.PHONY : test_lib1/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -395,6 +408,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... test_lib1"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_lisp"

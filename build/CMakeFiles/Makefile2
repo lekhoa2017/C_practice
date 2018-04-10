@@ -290,6 +290,7 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 
 # Convenience name for "all" pass in the directory.
 ex1/all: ex1/CMakeFiles/publish_message.dir/all
+ex1/all: ex1/CMakeFiles/test_lib1.dir/all
 .PHONY : ex1/all
 
 # Convenience name for "clean" pass in the directory.
@@ -303,6 +304,7 @@ ex1/clean: ex1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 ex1/clean: ex1/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 ex1/clean: ex1/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 ex1/clean: ex1/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+ex1/clean: ex1/CMakeFiles/test_lib1.dir/clean
 .PHONY : ex1/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -621,6 +623,41 @@ ex1/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: ex1/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ex1/CMakeFiles/test_lib1.dir
+
+# All Build rule for target.
+ex1/CMakeFiles/test_lib1.dir/all:
+	$(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/depend
+	$(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/khoa/C_practice/build/CMakeFiles  4 5
+	@echo "Built target test_lib1"
+.PHONY : ex1/CMakeFiles/test_lib1.dir/all
+
+# Include target in all.
+all: ex1/CMakeFiles/test_lib1.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ex1/CMakeFiles/test_lib1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/khoa/C_practice/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ex1/CMakeFiles/test_lib1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/khoa/C_practice/build/CMakeFiles 0
+.PHONY : ex1/CMakeFiles/test_lib1.dir/rule
+
+# Convenience name for target.
+test_lib1: ex1/CMakeFiles/test_lib1.dir/rule
+.PHONY : test_lib1
+
+# clean rule for target.
+ex1/CMakeFiles/test_lib1.dir/clean:
+	$(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/clean
+.PHONY : ex1/CMakeFiles/test_lib1.dir/clean
+
+# clean rule for target.
+clean: ex1/CMakeFiles/test_lib1.dir/clean
 .PHONY : clean
 
 #=============================================================================

@@ -292,6 +292,68 @@ std_msgs_generate_messages_py/fast:
 	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ex1/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+# Convenience name for target.
+ex1/CMakeFiles/test_lib1.dir/rule:
+	cd /home/khoa/C_practice/build && $(MAKE) -f CMakeFiles/Makefile2 ex1/CMakeFiles/test_lib1.dir/rule
+.PHONY : ex1/CMakeFiles/test_lib1.dir/rule
+
+# Convenience name for target.
+test_lib1: ex1/CMakeFiles/test_lib1.dir/rule
+.PHONY : test_lib1
+
+# fast build rule for target.
+test_lib1/fast:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/build
+.PHONY : test_lib1/fast
+
+src/class_files/lib1.o: src/class_files/lib1.cpp.o
+.PHONY : src/class_files/lib1.o
+
+# target to build an object file
+src/class_files/lib1.cpp.o:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/src/class_files/lib1.cpp.o
+.PHONY : src/class_files/lib1.cpp.o
+
+src/class_files/lib1.i: src/class_files/lib1.cpp.i
+.PHONY : src/class_files/lib1.i
+
+# target to preprocess a source file
+src/class_files/lib1.cpp.i:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/src/class_files/lib1.cpp.i
+.PHONY : src/class_files/lib1.cpp.i
+
+src/class_files/lib1.s: src/class_files/lib1.cpp.s
+.PHONY : src/class_files/lib1.s
+
+# target to generate assembly for a file
+src/class_files/lib1.cpp.s:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/src/class_files/lib1.cpp.s
+.PHONY : src/class_files/lib1.cpp.s
+
+src/nodes/test_lib1.o: src/nodes/test_lib1.cpp.o
+.PHONY : src/nodes/test_lib1.o
+
+# target to build an object file
+src/nodes/test_lib1.cpp.o:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/src/nodes/test_lib1.cpp.o
+.PHONY : src/nodes/test_lib1.cpp.o
+
+src/nodes/test_lib1.i: src/nodes/test_lib1.cpp.i
+.PHONY : src/nodes/test_lib1.i
+
+# target to preprocess a source file
+src/nodes/test_lib1.cpp.i:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/src/nodes/test_lib1.cpp.i
+.PHONY : src/nodes/test_lib1.cpp.i
+
+src/nodes/test_lib1.s: src/nodes/test_lib1.cpp.s
+.PHONY : src/nodes/test_lib1.s
+
+# target to generate assembly for a file
+src/nodes/test_lib1.cpp.s:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/src/nodes/test_lib1.cpp.s
+.PHONY : src/nodes/test_lib1.cpp.s
+
 src/publish_message.o: src/publish_message.cpp.o
 .PHONY : src/publish_message.o
 
@@ -329,6 +391,7 @@ help:
 	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rebuild_cache"
+	@echo "... test_lib1"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_lisp"
@@ -339,6 +402,12 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... publish_message"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... src/class_files/lib1.o"
+	@echo "... src/class_files/lib1.i"
+	@echo "... src/class_files/lib1.s"
+	@echo "... src/nodes/test_lib1.o"
+	@echo "... src/nodes/test_lib1.i"
+	@echo "... src/nodes/test_lib1.s"
 	@echo "... src/publish_message.o"
 	@echo "... src/publish_message.i"
 	@echo "... src/publish_message.s"
