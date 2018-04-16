@@ -13,6 +13,14 @@ sensor_msgs/Joy.h
 /home/khoa/C_practice/src/ex1/include/ex1/sensor_msgs/Joy.h
 std_msgs/Float32MultiArray.h
 /home/khoa/C_practice/src/ex1/include/ex1/std_msgs/Float32MultiArray.h
+std_msgs/String.h
+/home/khoa/C_practice/src/ex1/include/ex1/std_msgs/String.h
+sstream
+-
+fstream
+-
+iostream
+-
 
 /home/khoa/C_practice/src/ex1/src/class_files/lib1.cpp
 ex1/lib1.h
@@ -27,6 +35,8 @@ std_msgs/Float32MultiArray.h
 /home/khoa/C_practice/src/ex1/src/nodes/std_msgs/Float32MultiArray.h
 ex1/lib1.h
 /home/khoa/C_practice/src/ex1/src/nodes/ex1/lib1.h
+unistd.h
+/home/khoa/C_practice/src/ex1/src/nodes/unistd.h
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h
@@ -758,5 +768,21 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 std_msgs/MultiArrayDimension.h
+-
+
+/opt/ros/indigo/include/std_msgs/String.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+<node pkg="ex1" type="test_lib1" name="test_lib1" >    
+	<rosparam command="load" file="$(find ex1)/launch/data.yaml" />
+ 
+</node>
+
+</launch>

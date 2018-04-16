@@ -64,6 +64,7 @@ ex1/CMakeFiles/test_lib1.dir/src/class_files/lib1.cpp.o: /opt/ros/indigo/include
 ex1/CMakeFiles/test_lib1.dir/src/class_files/lib1.cpp.o: /opt/ros/indigo/include/std_msgs/Header.h
 ex1/CMakeFiles/test_lib1.dir/src/class_files/lib1.cpp.o: /opt/ros/indigo/include/std_msgs/MultiArrayDimension.h
 ex1/CMakeFiles/test_lib1.dir/src/class_files/lib1.cpp.o: /opt/ros/indigo/include/std_msgs/MultiArrayLayout.h
+ex1/CMakeFiles/test_lib1.dir/src/class_files/lib1.cpp.o: /opt/ros/indigo/include/std_msgs/String.h
 
 ex1/CMakeFiles/test_lib1.dir/src/nodes/test_lib1.cpp.o: /home/khoa/C_practice/src/ex1/include/ex1/lib1.h
 ex1/CMakeFiles/test_lib1.dir/src/nodes/test_lib1.cpp.o: /home/khoa/C_practice/src/ex1/src/nodes/test_lib1.cpp
@@ -128,4 +129,5 @@ ex1/CMakeFiles/test_lib1.dir/src/nodes/test_lib1.cpp.o: /opt/ros/indigo/include/
 ex1/CMakeFiles/test_lib1.dir/src/nodes/test_lib1.cpp.o: /opt/ros/indigo/include/std_msgs/Header.h
 ex1/CMakeFiles/test_lib1.dir/src/nodes/test_lib1.cpp.o: /opt/ros/indigo/include/std_msgs/MultiArrayDimension.h
 ex1/CMakeFiles/test_lib1.dir/src/nodes/test_lib1.cpp.o: /opt/ros/indigo/include/std_msgs/MultiArrayLayout.h
+ex1/CMakeFiles/test_lib1.dir/src/nodes/test_lib1.cpp.o: /opt/ros/indigo/include/std_msgs/String.h
 
