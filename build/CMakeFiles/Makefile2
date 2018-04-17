@@ -289,11 +289,13 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 # Directory level rules for directory ex1
 
 # Convenience name for "all" pass in the directory.
+ex1/all: ex1/CMakeFiles/imu_calibration.dir/all
 ex1/all: ex1/CMakeFiles/publish_message.dir/all
 ex1/all: ex1/CMakeFiles/test_lib1.dir/all
 .PHONY : ex1/all
 
 # Convenience name for "clean" pass in the directory.
+ex1/clean: ex1/CMakeFiles/imu_calibration.dir/clean
 ex1/clean: ex1/CMakeFiles/publish_message.dir/clean
 ex1/clean: ex1/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 ex1/clean: ex1/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
@@ -312,13 +314,48 @@ ex1/preinstall:
 .PHONY : ex1/preinstall
 
 #=============================================================================
+# Target rules for target ex1/CMakeFiles/imu_calibration.dir
+
+# All Build rule for target.
+ex1/CMakeFiles/imu_calibration.dir/all:
+	$(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/depend
+	$(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/khoa/C_practice/build/CMakeFiles  3 4
+	@echo "Built target imu_calibration"
+.PHONY : ex1/CMakeFiles/imu_calibration.dir/all
+
+# Include target in all.
+all: ex1/CMakeFiles/imu_calibration.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ex1/CMakeFiles/imu_calibration.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/khoa/C_practice/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ex1/CMakeFiles/imu_calibration.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/khoa/C_practice/build/CMakeFiles 0
+.PHONY : ex1/CMakeFiles/imu_calibration.dir/rule
+
+# Convenience name for target.
+imu_calibration: ex1/CMakeFiles/imu_calibration.dir/rule
+.PHONY : imu_calibration
+
+# clean rule for target.
+ex1/CMakeFiles/imu_calibration.dir/clean:
+	$(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/clean
+.PHONY : ex1/CMakeFiles/imu_calibration.dir/clean
+
+# clean rule for target.
+clean: ex1/CMakeFiles/imu_calibration.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target ex1/CMakeFiles/publish_message.dir
 
 # All Build rule for target.
 ex1/CMakeFiles/publish_message.dir/all:
 	$(MAKE) -f ex1/CMakeFiles/publish_message.dir/build.make ex1/CMakeFiles/publish_message.dir/depend
 	$(MAKE) -f ex1/CMakeFiles/publish_message.dir/build.make ex1/CMakeFiles/publish_message.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/khoa/C_practice/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/khoa/C_practice/build/CMakeFiles  5
 	@echo "Built target publish_message"
 .PHONY : ex1/CMakeFiles/publish_message.dir/all
 
@@ -632,7 +669,7 @@ clean: ex1/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 ex1/CMakeFiles/test_lib1.dir/all:
 	$(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/depend
 	$(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/khoa/C_practice/build/CMakeFiles  4 5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/khoa/C_practice/build/CMakeFiles  6 7
 	@echo "Built target test_lib1"
 .PHONY : ex1/CMakeFiles/test_lib1.dir/all
 

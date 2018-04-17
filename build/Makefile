@@ -244,6 +244,19 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
+# Target rules for targets named imu_calibration
+
+# Build rule for target.
+imu_calibration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 imu_calibration
+.PHONY : imu_calibration
+
+# fast build rule for target.
+imu_calibration/fast:
+	$(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/build
+.PHONY : imu_calibration/fast
+
+#=============================================================================
 # Target rules for targets named publish_message
 
 # Build rule for target.
@@ -406,6 +419,7 @@ help:
 	@echo "... run_tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... imu_calibration"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... test_lib1"

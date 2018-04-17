@@ -14,9 +14,7 @@ int main(int argc, char** argv)
 	lib1 myObj(&n, &nh);
 	ros::Subscriber joySub = n.subscribe<sensor_msgs::Joy>("joy", 10, &lib1::callBack, &myObj);
 	myObj.timer1 = myObj.n_.createTimer(ros::Duration(0.1), &lib1::cb_timer,&myObj);
-//	usleep(20000000);
-//    	ros::spin();
-//	ros::Rate loop_rate(5);
+
 	while (ros::ok())
 	{
 		ros::spinOnce();

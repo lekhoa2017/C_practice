@@ -6,7 +6,7 @@ lib1::lib1(ros::NodeHandle *n,ros::NodeHandle *nh)
 	n_ = *n;
 	nh_= *nh;
 	data= 0;
-	nh_.getParam("data1/value",data);
+	nh_.getParam("data1/value1",data);
 	dataPub=n_.advertise<std_msgs::Float32MultiArray>("output_data", 10);
 	data1Pub=n_.advertise<std_msgs::Float32MultiArray>("new_data", 10);
 	helloPub=n_.advertise<std_msgs::String>("Say_s", 10);
@@ -22,8 +22,11 @@ lib1::~lib1()
 	  std::fstream myfile;
 	  myfile.open ("/home/khoa/C_practice/src/ex1/launch/data.yaml");
 	  myfile << "data1:\n";
-	  myfile << " value: ";
+	  myfile << " value1: ";
 	  myfile << data;
+	  myfile << "\n";
+	  myfile << " value2: ";
+	  myfile << (data+10);
 	  myfile.close();
 	
 }

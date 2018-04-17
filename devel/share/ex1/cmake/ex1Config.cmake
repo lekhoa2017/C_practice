@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/khoa/C_practice/devel/lib;/home/khoa/C_practice/devel/lib;/home/khoa/SPIR_ws2/devel/lib;/home/khoa/SPIR_ws1/devel/lib;/home/khoa/SPIR_ws/devel/lib;/home/khoa/catkin_ws/devel/lib;/opt/ros/indigo/lib)
+    foreach(path /home/khoa/C_practice/devel/lib;/home/khoa/SPIR3_ws/devel/lib;/home/khoa/C_practice/devel/lib;/home/khoa/SPIR_ws1/devel/lib;/home/khoa/SPIR_ws/devel/lib;/home/khoa/catkin_ws/devel/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

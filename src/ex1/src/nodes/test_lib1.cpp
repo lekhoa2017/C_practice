@@ -8,8 +8,8 @@
 
 int main(int argc, char** argv)
 {
-   	ros::init(argc, argv, "testin_lib1");     
-	ros::NodeHandle n;
+   	ros::init(argc, argv, "testing_lib1");
+   	ros::NodeHandle n;
 	ros::NodeHandle nh ("~");	
 	lib1 myObj(&n, &nh);
 	ros::Subscriber joySub = n.subscribe<sensor_msgs::Joy>("joy", 10, &lib1::callBack, &myObj);

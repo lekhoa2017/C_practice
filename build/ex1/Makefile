@@ -153,6 +153,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ex1/CMakeFiles/imu_calibration.dir/rule:
+	cd /home/khoa/C_practice/build && $(MAKE) -f CMakeFiles/Makefile2 ex1/CMakeFiles/imu_calibration.dir/rule
+.PHONY : ex1/CMakeFiles/imu_calibration.dir/rule
+
+# Convenience name for target.
+imu_calibration: ex1/CMakeFiles/imu_calibration.dir/rule
+.PHONY : imu_calibration
+
+# fast build rule for target.
+imu_calibration/fast:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/build
+.PHONY : imu_calibration/fast
+
+# Convenience name for target.
 ex1/CMakeFiles/publish_message.dir/rule:
 	cd /home/khoa/C_practice/build && $(MAKE) -f CMakeFiles/Makefile2 ex1/CMakeFiles/publish_message.dir/rule
 .PHONY : ex1/CMakeFiles/publish_message.dir/rule
@@ -330,6 +344,54 @@ src/class_files/lib1.cpp.s:
 	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/test_lib1.dir/build.make ex1/CMakeFiles/test_lib1.dir/src/class_files/lib1.cpp.s
 .PHONY : src/class_files/lib1.cpp.s
 
+src/class_files/mag_cal.o: src/class_files/mag_cal.cpp.o
+.PHONY : src/class_files/mag_cal.o
+
+# target to build an object file
+src/class_files/mag_cal.cpp.o:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/src/class_files/mag_cal.cpp.o
+.PHONY : src/class_files/mag_cal.cpp.o
+
+src/class_files/mag_cal.i: src/class_files/mag_cal.cpp.i
+.PHONY : src/class_files/mag_cal.i
+
+# target to preprocess a source file
+src/class_files/mag_cal.cpp.i:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/src/class_files/mag_cal.cpp.i
+.PHONY : src/class_files/mag_cal.cpp.i
+
+src/class_files/mag_cal.s: src/class_files/mag_cal.cpp.s
+.PHONY : src/class_files/mag_cal.s
+
+# target to generate assembly for a file
+src/class_files/mag_cal.cpp.s:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/src/class_files/mag_cal.cpp.s
+.PHONY : src/class_files/mag_cal.cpp.s
+
+src/nodes/imu_calibration.o: src/nodes/imu_calibration.cpp.o
+.PHONY : src/nodes/imu_calibration.o
+
+# target to build an object file
+src/nodes/imu_calibration.cpp.o:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/src/nodes/imu_calibration.cpp.o
+.PHONY : src/nodes/imu_calibration.cpp.o
+
+src/nodes/imu_calibration.i: src/nodes/imu_calibration.cpp.i
+.PHONY : src/nodes/imu_calibration.i
+
+# target to preprocess a source file
+src/nodes/imu_calibration.cpp.i:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/src/nodes/imu_calibration.cpp.i
+.PHONY : src/nodes/imu_calibration.cpp.i
+
+src/nodes/imu_calibration.s: src/nodes/imu_calibration.cpp.s
+.PHONY : src/nodes/imu_calibration.s
+
+# target to generate assembly for a file
+src/nodes/imu_calibration.cpp.s:
+	cd /home/khoa/C_practice/build && $(MAKE) -f ex1/CMakeFiles/imu_calibration.dir/build.make ex1/CMakeFiles/imu_calibration.dir/src/nodes/imu_calibration.cpp.s
+.PHONY : src/nodes/imu_calibration.cpp.s
+
 src/nodes/test_lib1.o: src/nodes/test_lib1.cpp.o
 .PHONY : src/nodes/test_lib1.o
 
@@ -386,6 +448,7 @@ help:
 	@echo "... depend"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... imu_calibration"
 	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... install"
@@ -405,6 +468,12 @@ help:
 	@echo "... src/class_files/lib1.o"
 	@echo "... src/class_files/lib1.i"
 	@echo "... src/class_files/lib1.s"
+	@echo "... src/class_files/mag_cal.o"
+	@echo "... src/class_files/mag_cal.i"
+	@echo "... src/class_files/mag_cal.s"
+	@echo "... src/nodes/imu_calibration.o"
+	@echo "... src/nodes/imu_calibration.i"
+	@echo "... src/nodes/imu_calibration.s"
 	@echo "... src/nodes/test_lib1.o"
 	@echo "... src/nodes/test_lib1.i"
 	@echo "... src/nodes/test_lib1.s"

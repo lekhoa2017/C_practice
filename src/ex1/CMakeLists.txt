@@ -206,3 +206,7 @@ add_dependencies(publish_message ex1_generate_messages_cpp)
 add_executable(test_lib1 src/nodes/test_lib1.cpp src/class_files/lib1.cpp)
 target_link_libraries(test_lib1 ${catkin_LIBRARIES})
 add_dependencies(test_lib1 ex1_generate_messages_cpp)
+
+add_executable(imu_calibration src/nodes/imu_calibration.cpp src/class_files/mag_cal.cpp)
+target_link_libraries(imu_calibration ${catkin_LIBRARIES})
+add_dependencies(imu_calibration ex1_generate_messages_cpp)
