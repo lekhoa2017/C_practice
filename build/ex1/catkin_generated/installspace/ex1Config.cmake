@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(ex1_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "include;/usr/include/eigen3 " STREQUAL " ")
   set(ex1_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "include;/usr/include/eigen3")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})

@@ -8,6 +8,7 @@
 #include <sstream>
 #include <fstream>
 #include <iostream>
+#include <Eigen/Dense>
 
 class lib1
 {

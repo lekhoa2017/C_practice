@@ -17,7 +17,6 @@ int main(int argc, char** argv)
 	ros::Subscriber mag_Sub = n.subscribe<sensor_msgs::MagneticField>("imu/raw", 10, &imuCal::cb_mag, &imuObj);
 	ros::Subscriber heading_Sub = n.subscribe<std_msgs::Float32MultiArray>("Heading_estimation", 10, &imuCal::cb_Heading, &imuObj);
 
-	imuObj.timer1 = imuObj.n_.createTimer(ros::Duration(0.05), &imuCal::cb_timer,&imuObj);
 
 	while (ros::ok())
 	{

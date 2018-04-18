@@ -3,6 +3,6 @@ prefix=/home/khoa/C_practice/devel
 Name: ex1
 Description: Description of ex1
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/khoa/C_practice/src/ex1/include -I/usr/include/eigen3
 Libs: -L/home/khoa/C_practice/devel/lib 
 Requires: 

@@ -6,7 +6,7 @@ imuCal::imuCal(ros::NodeHandle *n,ros::NodeHandle *nh)
 	n_ = *n;
 	nh_= *nh;
 
-	// init value of max and min
+	// initial values of max and min
 	maxX =-10;
 	minX = 10;
 	maxY = -10;
@@ -14,6 +14,8 @@ imuCal::imuCal(ros::NodeHandle *n,ros::NodeHandle *nh)
 	Heading = 90;
 	magX = 0;
 	magY = 0;
+	magX_1 = 0;
+	magY_1 = 0;
 	count = 0;
 	initial_heading = 90;
 	stage = 0;
@@ -21,7 +23,8 @@ imuCal::imuCal(ros::NodeHandle *n,ros::NodeHandle *nh)
 	yaw_command = 0;
 	enable_Pub  = n_.advertise<std_msgs::Int32>("mode_sim", 10);
 	command_Pub = n_.advertise<geometry_msgs::Vector3>("command_sim", 10);
-//	usleep(1000000); // wait for heading estimation to settle down
+	this->timer1 = n_.createTimer(ros::Duration(0.05), &imuCal::cb_timer,this);
+
 
 
 
@@ -71,6 +74,7 @@ void imuCal::cb_mag(const sensor_msgs::MagneticField::ConstPtr& msg)
 
 void imuCal::cb_timer(const ros::TimerEvent& event)
 {
+	double G =0.8; // Filter gain
 
 	if (count<=40) // wait for heading to settle down 40x0.05= 2s
 	{
@@ -80,6 +84,13 @@ void imuCal::cb_timer(const ros::TimerEvent& event)
 	}
 	else
 	{
+		// filter
+		magX = G * magX + (1-G) * magX_1;
+		magY = G * magY + (1-G) * magY_1;
+		magX_1 = magX;
+		magY_1 = magY;
+
+
 		// Get max and min value of magnetic field
 		if (maxX < magX) { maxX= magX; }
 		if (minX > magX) { minX= magX; }

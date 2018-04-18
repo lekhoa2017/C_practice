@@ -11,6 +11,8 @@ lib1::lib1(ros::NodeHandle *n,ros::NodeHandle *nh)
 	data1Pub=n_.advertise<std_msgs::Float32MultiArray>("new_data", 10);
 	helloPub=n_.advertise<std_msgs::String>("Say_s", 10);
 	count=0;
+	this->timer1 = n_.createTimer(ros::Duration(0.1), &lib1::cb_timer,this);
+
 
 }
 
@@ -36,6 +38,7 @@ void lib1::callBack(const sensor_msgs::Joy::ConstPtr& msg)
 {
 	double data1;
 	double data2;
+	Eigen::Matrix<double,2,2> m_data;
 	std_msgs::Float32MultiArray data_out;
 	
 	data_out.data.resize(2);
@@ -43,8 +46,15 @@ void lib1::callBack(const sensor_msgs::Joy::ConstPtr& msg)
 	data1= msg->axes[4] + msg->axes[0];
 	data2= msg->axes[1] + msg->axes[3];
 	
+	m_data(0,0) = msg->axes[4];
+	m_data(0,1) = msg->axes[0];
+	m_data(1,0) = msg->axes[1];
+	m_data(1,1) = msg->axes[3];
+
+
+
 	data_out.data[0]=data1;
-	data_out.data[1]=data2;
+	data_out.data[1]=m_data.determinant();
 	dataPub.publish(data_out);
 	
 

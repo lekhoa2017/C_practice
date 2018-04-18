@@ -13,7 +13,7 @@ int main(int argc, char** argv)
 	ros::NodeHandle nh ("~");	
 	lib1 myObj(&n, &nh);
 	ros::Subscriber joySub = n.subscribe<sensor_msgs::Joy>("joy", 10, &lib1::callBack, &myObj);
-	myObj.timer1 = myObj.n_.createTimer(ros::Duration(0.1), &lib1::cb_timer,&myObj);
+//	myObj.timer1 = myObj.n_.createTimer(ros::Duration(0.1), &lib1::cb_timer,&myObj);
 
 	while (ros::ok())
 	{

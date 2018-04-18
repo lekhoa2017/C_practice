@@ -27,7 +27,7 @@ class imuCal
 		void cb_timer(const ros::TimerEvent& event);
 		ros::Timer timer1;
 		float maxX, minX, maxY, minY;
-		float Heading, magX, magY,initial_heading;
+		float Heading, magX, magY,initial_heading,magX_1,magY_1;
 		double count;
 		int stage; // 0 initial, 1 CW; 2 CCW; 3 finish
 		int enable;
